@@ -1,0 +1,19 @@
+.shadow-custom {
+    box-shadow: 2px 2px 4px 0px #006773 !important;
+}
+
+.range-shadow {
+    box-shadow: 2px 2px 4px 0px #006773;
+    transition: all 0.5s linear;
+}
+
+.range-shadow:hover {
+    box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+
+.lds-ripple {
+    opacity: 1;
+    animation: lds-ripple 0.9s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
