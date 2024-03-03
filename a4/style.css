@@ -2,6 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
+    user-select: none;
     transition: all 4s ease-in-out;
 }
 

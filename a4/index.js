@@ -128,6 +128,25 @@ gameBoard.addEventListener('contextmenu', function(event) {
   event.preventDefault();
 })
 
+// Disable right click on the game board
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, and Ctrl+U
+document.onkeydown = function(e) {
+    if(e.code === "F12") {
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.code === 'KeyI'){
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.code === 'KeyJ'){
+      return false;
+    }
+    if(e.ctrlKey && e.code === 'KeyU'){
+      return false;
+    }
+}
+
 // Set the difficulty level based the pointer position
 speedElement.addEventListener('click', () => {
     const value = parseInt(speedElement.value);
