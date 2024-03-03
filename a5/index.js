@@ -226,5 +226,5 @@ document.onkeydown = function(e) {
     if(e.ctrlKey && e.code === 'KeyU'){
       return false;
     }
-}
+};
 })

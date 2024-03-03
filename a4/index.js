@@ -145,7 +145,7 @@ document.onkeydown = function(e) {
     if(e.ctrlKey && e.code === 'KeyU'){
       return false;
     }
-}
+};
 
 // Set the difficulty level based the pointer position
 speedElement.addEventListener('click', () => {

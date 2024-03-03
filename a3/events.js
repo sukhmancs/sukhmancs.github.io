@@ -134,7 +134,7 @@ document.onkeydown = function(e) {
     if(e.ctrlKey && e.code === 'KeyU'){
       return false;
     }
-}
+};
 
 displayRandomImages();  // display randomized images of page load
 startCountDown();       // once page loaded start the countdown
